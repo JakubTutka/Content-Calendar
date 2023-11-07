@@ -32,18 +32,18 @@ public class ContentCollectionRepository {
 
     @PostConstruct
     private void init() {
-        contentList = List.of(
-            new Content(
-                    1,
-                    "My First Blog post",
-                    "That is my first blog post",
-                    Status.IDEA,
-                    Type.ARTICLE,
-                    LocalDateTime.now(),
-                    null,
-                    ""
-            )
+        contentList.add(
+                new Content(
+                        1,
+                        "My First Blog post",
+                        "That is my first blog post",
+                        Status.IDEA,
+                        Type.ARTICLE,
+                        LocalDateTime.now(),
+                        null,
+                        "")
         );
+
     }
 
 

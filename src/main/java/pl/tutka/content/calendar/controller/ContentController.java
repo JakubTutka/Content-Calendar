@@ -30,6 +30,7 @@ public class ContentController {
 
     @PostMapping("")
     public void create(@RequestBody Content content) {
+        System.out.println("WTF");
         repository.save(content);
     }
 }
