@@ -2,7 +2,7 @@
 GET http://localhost:8080/api/content
 
 ### Get Content by ID
-GET http://localhost:8080/api/content/{{id}}
+GET http://localhost:8080/api/content/{{id_create}}
 
 ### Create new Content
 POST http://localhost:8080/api/content
@@ -12,6 +12,21 @@ Content-Type: application/json
   "id": 2,
   "title": "My Second Blog post",
   "description": "That is my second blog post",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-11-07T13:20:38.243630279",
+  "dateUpdated": null,
+  "url": ""
+}
+
+### Updet content with id_update
+PUT http://localhost:8080/api/content/{{id_update}}
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "My Second Blog post - UPDATED",
+  "description": "That is my second blog post - UPDATED",
   "status": "IDEA",
   "contentType": "ARTICLE",
   "dateCreated": "2023-11-07T13:20:38.243630279",

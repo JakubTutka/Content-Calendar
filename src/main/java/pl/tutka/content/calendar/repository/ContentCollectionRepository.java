@@ -14,7 +14,7 @@ import java.util.Optional;
 @Repository
 public class ContentCollectionRepository {
 
-    private List<Content> contentList = new ArrayList<>();
+    private final List<Content> contentList = new ArrayList<>();
 
     public ContentCollectionRepository() {}
 
@@ -47,4 +47,7 @@ public class ContentCollectionRepository {
     }
 
 
+    public boolean existsById(Integer id) {
+        return findById(id).isPresent();
+    }
 }
