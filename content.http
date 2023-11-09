@@ -33,3 +33,7 @@ Content-Type: application/json
   "dateUpdated": null,
   "url": ""
 }
+
+### Delete content with id_delete
+DELETE http://localhost:8080/api/content/{{id_delete}}
+Content-Type: application/json
